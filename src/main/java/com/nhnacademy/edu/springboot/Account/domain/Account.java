@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.springboot.student;
+package com.nhnacademy.edu.springboot.Account.domain;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -7,9 +7,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@EqualsAndHashCode
 @RequiredArgsConstructor
-public class Student {
-    private final String name;
-    private final int score;
+@EqualsAndHashCode
+public class Account {
+    private final String number;
+    private final int balance;
 }
