@@ -1,8 +1,9 @@
 package com.nhnacademy.edu.springboot.student;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
+import com.nhnacademy.edu.springboot.student.entity.Student;
+import com.nhnacademy.edu.springboot.student.repository.StudentRepository;
 import java.util.Optional;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,7 +21,7 @@ class StudentRepositoryTest {
         // data
         Student manty = new Student(1L, "manty", 100);
 
-        studentRepository.save(manty);
+//        studentRepository.save(manty);
         Optional<Student> student = studentRepository.findById(1L);
 
         // Assertion

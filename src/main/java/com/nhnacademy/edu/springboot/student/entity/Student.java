@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.springboot.student;
+package com.nhnacademy.edu.springboot.student.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

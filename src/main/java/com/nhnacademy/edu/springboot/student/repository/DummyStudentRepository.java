@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.springboot.student;
+package com.nhnacademy.edu.springboot.student.repository;
 
 import java.util.List;
 import org.springframework.stereotype.Repository;
