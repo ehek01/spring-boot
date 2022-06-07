@@ -18,23 +18,23 @@ import org.springframework.web.bind.annotation.RestController;
 public class AccountController {
     private final AccountService accountService;
 
-    @GetMapping("/students")
+    @GetMapping("/accounts")
     public List<Account> getAccounts() {
         return accountService.getAccounts();
     }
 
-    @GetMapping("/student/{id}")
+    @GetMapping("/account/{id}")
     public Account getAccount(@PathVariable Long id) {
         return accountService.getAccount(id);
     }
 
-    @PostMapping("/students")
+    @PostMapping("/accounts")
     @ResponseStatus(HttpStatus.CREATED)
-    public Account createAccount(@RequestBody Account student) {
-        return accountService.createAccount(student);
+    public Account createAccount(@RequestBody Account account) {
+        return accountService.createAccount(account);
     }
 
-    @DeleteMapping("/students/{id}")
+    @DeleteMapping("/accounts/{id}")
     public String deleteAccount(@PathVariable Long id) {
         accountService.deleteAccount(id);
         return "{\"result\":\"OK\"}";
