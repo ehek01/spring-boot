@@ -16,7 +16,7 @@ class AccountRepositoryTest {
     AccountRepository accountRepository;
 
     @Test
-    public void testAccountRepository() {
+    void testAccountRepository() {
         // data
         Account ac1 = new Account(1L, "nh계좌", 2000);
 
