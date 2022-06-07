@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.springboot.Account.domain;
+package com.nhnacademy.edu.springboot.account.domain;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
